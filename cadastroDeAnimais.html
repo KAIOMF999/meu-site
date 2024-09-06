@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inputEspecie">Espécie:</label>  
+    <input type="text" name="inputEspecie" id="inputEspecie" placeholder="Ex: Hipopótamo">
+    <br>
+    <label for="inputGenero">Gênero:</label>
+    <select name="inputGenero" id="inputGenero">
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+    </select>
+    <br>
+    <label for="inputCor">Cor:</label>
+    <input type="text" name="inputCor" id="inputCor" placeholder="Ex: Roxo">
+    <br>
+    <label for="inputIdade">Idade:</label>
+    <input type="text" name="inputIdade" id="inputIdade" placeholder="Ex: Jovem">
+    <br>
+    <label for="inputNivelPerigo">Nivel de Perigo:</label>
+    <select name="inputNivelPerigo" id="inputNivelPerigo">
+        <option value="0">0 - Não Apresenta Perigo</option>
+        <option value="1">1 - Baixo Risco</option>
+        <option value="2">2 - Risco Moderado</option>
+        <option value="3">3 - Potencialmente Perigoso</option>
+        <option value="4">4 - Perigoso</option>
+        <option value="5">5 - Extremamente Perigoso</option>
+    </select>
+    <br>
+    <label for="inputTipoAlimento">Tipo de Alimento:</label>
+    <input type="text" name="inputTipoAlimento" id="inputTipoAlimento" placeholder="Ex: Carne">
+    <br>
+    <label for="inputFamilia">Família:</label>
+    <select name="inputFamilia" id="inputFamilia">
+        <option value="mamifero">Mamífero</option>
+        <option value="oviparo">Ovíparo</option>
+        <option value="reptil">Réptil</option>
+    </select>
+    <br>
+    <label for="inputHabitat">Habitat:</label>
+    <select name="inputHabitat" id="inputHabitat">
+        <option value="terrestre">Terrestre</option>
+        <option value="aquatico">aquatico</option>
+        <option value="voador">voador</option>
+    </select>
+    <br>
+    <input type="button" value="Inserir" onclick="botaoInserir()">
+    <input type="button" value="Listar" onclick="botaoListar()">
+    <div style="background-color: cyan;" id="outputListaDeAnimais">...</div>
+
+    <script src="Animal.js"></script>
+    <script src="animaisControle.js"></script>
+
+</body>
+</html>
